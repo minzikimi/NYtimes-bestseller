@@ -27,4 +27,8 @@
     .grid {
       grid-template-columns: repeat(2, 1fr);
     }
+    .heading{
+      font-size:1rem;
+      margin-top:2rem;
+    }
   }
