@@ -129,7 +129,7 @@ table {
 body {
     font-family: 'Franklin Gothic', sans-serif;
   background-color:	#fdfdfd;
-  color: black;
+  color: #212427;
   font-size: 18px;
   
 }
@@ -137,7 +137,6 @@ body {
 h1{
     margin-top:5rem;
     text-align:center;
-    color:#000000;
     font-size:3rem;
   }
 
