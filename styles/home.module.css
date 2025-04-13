@@ -31,4 +31,7 @@
   .list {
     grid-template-columns: repeat(2, 1fr); 
   }
+  .heading{
+    margin-bottom: 2rem; 
+  }
 } 

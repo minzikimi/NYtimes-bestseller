@@ -46,4 +46,8 @@
       margin-top: auto;
       justify-content:center
   }
+
+  .listItem{
+    font-size:1.5rem;
+  }
   }  
