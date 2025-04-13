@@ -10,16 +10,15 @@ interface IParams {
 }
 
 
-export async function generateMetadata({ params }: IParams) {
-  const { genre } = params;
-
+export async function generateMetadata({ params }: { params: Promise<IParams['params']> }) {
+  const { genre } = await params; 
   return {
-    title: `${genre}`,
+    title: `${genre.replace("-", " ")}`,
   };
 }
 
-export default async function ListDetail({ params }: IParams) {
-  const { genre } = params;
+export default async function ListDetail({ params }: { params: Promise<IParams['params']> }) {
+  const { genre } = await params;
 
   const books = await fetchBookList(genre);
 
