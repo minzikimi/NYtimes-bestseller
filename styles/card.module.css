@@ -48,7 +48,7 @@
   
   .link {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size:1rem;
   }
 
@@ -56,4 +56,13 @@
     color:black;
   }
   
-  
+  @media (max-width: 620px) {
+ 
+    .card:hover{
+      background-color:white;
+      color:black;
+    }
+    .link:hover{
+      color:#333; 
+    }
+  }
