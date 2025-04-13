@@ -1,0 +1,50 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.heading {
+  text-align: center;
+  font-size: 3rem; 
+  margin-bottom: 3rem; 
+  margin-top: 2rem; 
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1rem; 
+  padding: 0;
+  list-style-type: none; 
+}
+
+.listItem {
+  padding: 1rem;
+  cursor:pointer;
+  margin: auto; 
+  transition: all 0.2s ease-in-out;
+  font-size: 1.5rem; 
+  letter-spacing: 0.5px; 
+  outline: none;
+ 
+  border-radius: 255px /15px /225px /15px /15px /225px /15px /255px; 
+}
+
+.listItem:hover {
+    box-shadow: 10px 10px hsla(0,0,0,0.5); 
+}
+
+
+@media (max-width: 620px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
