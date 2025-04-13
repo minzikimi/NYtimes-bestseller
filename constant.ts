@@ -1,1 +1,1 @@
-export const BASE_URL = "https://books-api.nomadcoders.workers.dev/lists"
+export const BASE_URL = "https://books-api.nomadcoders.workers.dev"

@@ -11,7 +11,7 @@ const page = () => {
     <div className={styles.container}>
       <h5 className={styles.heading}>
       Discover the latest New York Times bestsellers, built with Next.js
-      </h5>
+      - MJ</h5>
       <Image 
         src="/new-york.gif" 
         alt="New York"

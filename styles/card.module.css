@@ -1,0 +1,37 @@
+
+.card {
+    box-shadow: 10px 10px 0px 0px hsla(0,0,0,.5);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
+    border: solid 6px #000000; 
+    padding: 2rem;
+    text-align: center; 
+  }
+
+  .cover {
+    width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    margin :2rem 0;
+    font-weight: bold;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+  .buyButton {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #333; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .buyButton:hover {
+    background-color: #444; 
+  }

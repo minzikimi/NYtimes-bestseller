@@ -1,9 +1,12 @@
-import { BASE_URL } from "../../constant";
-import styles from "../../styles/home.module.css";
 import { fetchGenre } from "../../lib/api";
+import Genre from "../../components/Genre";
+import styles from "../../styles/home.module.css";
+
+export const metadata = {
+  title: "Home",
+};
 
 export default async function HomePage() {
-  // Wait for the data to be fetched
   const data = await fetchGenre();
 
   return (
@@ -11,9 +14,7 @@ export default async function HomePage() {
       <h1 className={styles.heading}>New York Times Bestsellers</h1>
       <ul className={styles.list}>
         {data.results.map((list) => (
-          <li key={list.list_name_encoded} className={styles.listItem}>
-            {list.display_name}
-          </li>
+          <Genre key={list.list_name_encoded} list_name_encoded={list.list_name_encoded} displayName={list.display_name} />
         ))}
       </ul>
     </div>
